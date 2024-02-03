@@ -207,7 +207,7 @@ class LBTrainingArguments:
     eval_only: bool = field(default=False)
     hf_checkpoint_path: str = field(default=None)
 
-    enc_name_or_path: str = field(default='DKYoon/mt5-small-lm-adapt')
+    enc_name_or_path: str = field(default='')
     lm_name_or_path: str = field(default='facebook/opt-125m')
     alignments: str = field(default='linear')
     add_new_lines_to_enc: bool = field(default=True)
