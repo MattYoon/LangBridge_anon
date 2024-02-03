@@ -5,7 +5,7 @@ class LangBridgeConfig(PretrainedConfig):
 
     def __init__(
         self,
-        enc: str = 'DKYoon/mt5-base-lm-adapt',
+        enc: str = '',
         lm: str = 'facebook/opt-125m',
         dim_enc: int = 768,
         dim_lm: int = 768,
