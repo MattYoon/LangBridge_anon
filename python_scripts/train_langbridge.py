@@ -216,7 +216,7 @@ class LBTrainingArguments:
     lm_hidden_size: int = field(default=768)
 
     train_set_path: str = field(
-        default='DKYoon/metamath-200k')
+        default='')
     val_set_path: str = field(
         default=None)
     limit_val_samples: int = field(default=None)
