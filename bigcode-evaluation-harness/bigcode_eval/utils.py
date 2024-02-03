@@ -242,17 +242,6 @@ def complete_code(
     from transformers import AutoTokenizer
     import string
 
-    # enc_tokenizer = AutoTokenizer.from_pretrained(
-    #     'DKYoon/mt5-xl-lm-adapt', use_fast=False)
-
-    # if enc_tokenizer.convert_tokens_to_ids([' '])[0] == enc_tokenizer.unk_token_id:
-    #     print('Adding whitespaces to encoder tokenizer')
-    #     whitespace = list(string.whitespace)[
-    #         1:]  # exclude single space
-    #     whitespace = whitespace + \
-    #         ['  ', '   ', '    ']  # add multispace
-    #     enc_tokenizer.add_special_tokens(
-    #         {'additional_special_tokens': whitespace})
 
     gen_token_dict = defaultdict(list)  # dict of list of generated tokens
     for step, batch in tqdm(
